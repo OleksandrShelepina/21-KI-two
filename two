@@ -1,0 +1,8 @@
+from collections import Counter
+variables = [10, 23.5, "Hello", True, None, [1, 2, 3], {"key": "value"}, (4, 5), {9, 8}, b"bytes"]
+data_types = [type(var) for var in variables]
+type_counter = Counter(data_types)
+most_common_type = type_counter.most_common(1)[0]
+print(variables)
+print(data_types)
+print(most_common_type)
